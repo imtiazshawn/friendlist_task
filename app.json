@@ -1,7 +1,5 @@
 {
   "expo": {
-    "facebookAppId": "770747017911369",
-    "facebookScheme": "770747017911369",
     "name": "fb-task",
     "slug": "fb-task",
     "version": "1.0.0",
@@ -17,19 +15,35 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.fbtask"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-facebook"
+    ],
+    "scheme": [
+      "fb-task",
+      "fb318718871219429"
     ]
   }
 }
