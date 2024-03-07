@@ -40,20 +40,11 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      [
-        "react-native-fbsdk-next",
-        {
-          "appID": "3644912369080706",
-          "clientToken": "bfb90f0e5d096538b70245bf27146d6d",
-          "displayName": "Friends Info",
-          "scheme": "fb3644912369080706",
-          "advertiserIDCollectionEnabled": false,
-          "autoLogAppEventsEnabled": false,
-          "isAutoInitEnabled": true,
-          "iosUserTrackingPermission": "This identifier will be used to deliver personalized ads for you."
-        }
-      ],
-      "expo-tracking-transparency"
+      "expo-facebook"
+    ],
+    "scheme": [
+      "fb-task",
+      "fb318718871219429"
     ]
   }
 }
